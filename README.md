@@ -5,7 +5,7 @@
 オリジナルは、内蔵のRTCを使用して時刻を刻み、アラームやタイマーの機能を持っていました。しかし、RTC機能を使うと以下のような不具合が発生し、どうしても修正することが出来ず実装を諦めました。  
 
 * RTCのバックアップ機能が正常に動かない。
-* RTCへの時刻設定中に設定が0になり、それ以降、設定作業ができなくなる。
+* RTCへの時刻設定中に表示が0になり、それ以降、設定作業ができなくなる。
 
 そこで、基本機能に絞って、ソフトウェアのみで以下の実装しました。
 
@@ -18,8 +18,6 @@
 ## 1. 概要
 
 本プログラムは、[waveshare](https://www.waveshare.com/)  **[Pico-Clock-Green](https://www.waveshare.com/wiki/Pico-Clock-Green)** を Raspberry Pi Pico + TinyGo で動作させるための時計アプリケーションです。
-
-この版を、実機で仕様どおりの動作を確認した**最終版（v12 dayfix）**とします。
 
 [Pico-Clock-Green](https://www.waveshare.com/wiki/Pico-Clock-Green)には、RTC（DS3231）が搭載されていますが、いくつかの不具合があったためこれを使用せず、Raspberry Pi Pico 上でソフトウェア時計として動作させます。そのため、電源を切ってしまうと時刻は保持されません。
 
