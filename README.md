@@ -18,6 +18,7 @@
 * ポモドーロタイマー
 * ストップウォッチ
 * テロップ表示
+* テトリス
 * タイマー
 
 | 項目 | 仕様 |
@@ -31,11 +32,12 @@
 
 それぞれのプログラムの機能や詳細な使い方については、それぞれのディレクトリ内のREADME.mdをお読み下さい。
 
-* [デジタル時計](./Timer/README.md)  
-* [ポモドーロタイマー](./Clock/README.md)  
-* [ストップウォッチ](./Pomodoro/README.md)  
-* [テロップ表示](./StopWatch/README.md)  
-* [タイマー](./Telop/README.md)  
+* [デジタル時計](./Clock/README.md)  
+* [ポモドーロタイマー](./Pomodoro/README.md)  
+* [ストップウォッチ](./StopWatch/README.md)  
+* [テロップ表示](./Telop/README.md)  
+* [テトリス](./Tetris/README.md)  
+* [カウントダウンタイマー](./Timer/README.md)  
 
 ## 2. ソースコードについて
 
@@ -46,6 +48,7 @@
 
 +---Clock
 |       app.go
+|       Clock.uf2
 |       config.go
 |       display.go
 |       font.go
@@ -61,6 +64,7 @@
 |       font.go
 |       input.go
 |       main.go
+|       Pomodoro.uf2
 |       README.md
 |
 +---StopWatch
@@ -72,6 +76,7 @@
 |       input.go
 |       main.go
 |       README.md
+|       StopWatch.uf2
 |
 +---Telop
 |       app.go
@@ -80,6 +85,19 @@
 |       font.go
 |       main.go
 |       README.md
+|       Telop.uf2
+|
++---Tetris
+|       buzzer.go
+|       config.go
+|       display.go
+|       font.go
+|       game.go
+|       input.go
+|       main.go
+|       pieces.go
+|       README.md
+|       Tetris.uf2
 |
 \---Timer
         app.go
@@ -90,6 +108,8 @@
         input.go
         main.go
         README.md
+        Timer.uf2
+
 ```
 ## 3. プログラムのコンパイルと転送について
 

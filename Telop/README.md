@@ -1,4 +1,4 @@
-# Pico-Clock-Green TinyGo Telop
+# Pico-Clock-Green TinyGo テロップ
 
 Waveshare Pico-Clock-Green を使ったテロップ表示アプリです。
 
