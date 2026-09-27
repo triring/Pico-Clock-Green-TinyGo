@@ -2,6 +2,8 @@
 
 Waveshare Pico-Clock-Green の LED マトリクスと3つのボタンを使用した Tetris 風ゲームです。
 
+![テトリス](./images/DSCN1060_800x480.jpg)  
+
 ## ハードウェア
 
 - Raspberry Pi Pico / RP2040
@@ -15,6 +17,9 @@ Waveshare Pico-Clock-Green の LED マトリクスと3つのボタンを使用�
 
 ゲーム上の論理盤面は **幅7ドット × 高さ22ドット**です。
 Pico-Clock-Green の物理表示は8×24ドットなので、ゲーム盤を90度回転し、物理的な22×7ドット領域へ表示しています。
+
+![テトリス](./images/DSCN1083_600x800.jpg)  
+
 
 ## 操作
 

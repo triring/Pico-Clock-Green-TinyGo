@@ -2,6 +2,7 @@
 
 Waveshare Pico-Clock-Green を Raspberry Pi Pico / TinyGo で動作させるポモドーロタイマーです。
 
+![ポモドーロタイマー](./images/DSCN1069_800x360.jpg) 
 ## 仕様
 
 - 25分の作業時間と5分の休憩時間を切り替えて使用します。

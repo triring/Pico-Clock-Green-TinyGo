@@ -1,6 +1,6 @@
 # Pico-Clock-Green TinyGo デジタル時計
 
-[waveshare](https://www.waveshare.com/)の[Pico-Clock-Green](https://www.waveshare.com/wiki/Pico-Clock-Green)というLEDクロック用に、C++で書かれたサンプルが公開されています。 これをAIさんの力を借りながら、tinygoで書き換えました。  
+[waveshare](https://www.waveshare.com/)の[Pico-Clock-Green](https://www.waveshare.com/wiki/Pico-Clock-Green)というLEDクロック用に、C++で書かれたサンプルコードが公開されています。 これをAIさんの力を借りながら、デジタル時計をtinygoで実装しました。
 
 オリジナルは、内蔵のRTCを使用して時刻を刻み、アラームやタイマーの機能を持っていました。しかし、RTC機能を使うと以下のような不具合が発生し、どうしても修正することが出来ず実装を諦めました。  
 
@@ -14,6 +14,8 @@
 * スクロール表示のOn/Off
 * 12/24時間表示の切替
 * 時報のOn/Off
+
+![デジタル時計](./images/DSCN1073_800x360.jpg)
 
 ## 1. 概要
 
