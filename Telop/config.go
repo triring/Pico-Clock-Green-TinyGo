@@ -18,16 +18,18 @@ const (
 const (
 	// telopScrollInterval は、テロップを1ピクセル移動する間隔です。
 	// telopScrollInterval = 50 * time.Millisecond
-	telopScrollInterval = 200 * time.Millisecond
+	telopScrollInterval = 100 * time.Millisecond
+	// telopScrollInterval = 200 * time.Millisecond
+	
 
 	// telopLineInterval は、1行のスクロール終了から次の行を開始するまでの待ち時間です。
-	telopLineInterval = 2 * time.Second
+	telopLineInterval = 1200 * time.Millisecond
 
 	// telopStartX は、テロップを画面右端から開始する位置です。
 	telopStartX = displayColumns
 
 	// telopTextBufferSize は、1行のテロップを保持するバッファ容量です。
-	telopTextBufferSize = 256
+	telopTextBufferSize = 1024
 )
 
 const (

@@ -6,18 +6,28 @@ import "time"
 // 1行ずつ右から左へスクロール表示し、表示終了後に一定時間待ってから次の行へ進みます。
 var telop = [...]string{
 /*
+	TinyGo Conference / 2026
+	開催日	2026年10月10日（土）
+	会場	AP秋葉原 4F Room-J
+*/
+	"#TINYGO CONFERENCE/2026",
+	"DATE:2026.10.10 SAT",
+	"VENUE:AP AKIHABARA",
+	"COME JOIN US!",
+
+/*
 	南極探検隊 隊員募集広告
 	求む男子。至難の旅。
 	僅かな報酬、極寒、暗黒の長い日々、絶えざる危険
 	生還の保証無し。
 	成功の暁には名誉と賞賛を得る
 	アーネスト・シャクルトン
-*/
 	"MEN WANTED FOR HAZARDOUS JOURNEY.",
 	"SMALL WAGES, BITTER COLD, LONG MONTHS OF COMPLETE DARKNESS, CONSTANT DANGER,",
 	"SAFE RETURN DOUBTFUL.",
 	"HONOR AND RECOGNITION IN CASE OF SUCCESS.",
 	"ERNEST SHACKLETON",
+*/
 
 /*
 	"ALPHA",
@@ -142,7 +152,7 @@ func (a *App) render() {
 // MMQTVWX の後ろには、5 ドット幅に加えて 1 ドットの間隔を設けます。
 func telopCharWidth(c byte) int {
 	switch c {
-	case 'M', 'Q', 'T', 'V', 'W', 'X':
+	case 'M', 'Q', 'T', 'V', 'W', 'X', '#':
 		return 6
 	default:
 		return 5
